@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 15:19:02 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/11 15:30:59 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/11 15:41:32 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,6 @@ int	main(void)
 		meta->makeSound();
 
 		Animal k;
-		k = *j;
-
 		Dog rex;
 		Cat bill;
 		
