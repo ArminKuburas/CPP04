@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 15:19:02 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/11 19:18:38 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/11 19:23:31 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,6 @@ int	main(void)
 		delete array_of_animals[i];
 		std::cout << "---------------------" << std::endl;
 	}
+	delete[] array_of_animals;
 	return (0);
 }
