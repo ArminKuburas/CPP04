@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 23:18:18 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/12 23:23:31 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/16 03:50:55 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,4 +55,35 @@ Character::~Character()
 	for (int i = 0; i < 4; i++)
 		if (_inventory[i])
 			delete _inventory[i];
+}
+
+std::string const & Character::getName() const
+{
+	return (_name);
+}
+
+void Character::equip(AMateria* m)
+{
+	for (int i = 0; i < 4; i++)
+	{
+		if (!_inventory[i])
+		{
+			_inventory[i] = m;
+			return ;
+		}
+	}
+}
+
+void Character::unequip(int idx)
+{
+	if (idx < 0 || idx >= 4 || !_inventory[idx])
+		return ;
+	_inventory[idx] = nullptr;
+}
+
+void Character::use(int idx, ICharacter& target)
+{
+	if (idx < 0 || idx >= 4 || !_inventory[idx])
+		return ;
+	_inventory[idx]->use(target);
 }
