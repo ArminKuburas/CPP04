@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 15:12:12 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/11 19:02:12 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/16 13:47:48 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ class Dog : public Animal
 		Dog& operator=(const Dog& other);
 		
 		void makeSound(void) const;
+		Brain * getBrain(void) const;
 	private:
 		Brain *_brain;
 };

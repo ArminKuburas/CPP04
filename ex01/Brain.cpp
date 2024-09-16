@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 18:59:16 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/11 19:04:18 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/16 13:54:44 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,4 +52,24 @@ Brain& Brain::operator=(const Brain& other)
 		}
 	}
 	return (*this);
+}
+
+std::string Brain::getIdea(int index) const
+{
+	if (index < 0 || index >= 100)
+	{
+		return "Invalid idea index!";
+	}
+	return this->_ideas[index];
+}
+
+void Brain::setIdea(int index, const std::string& idea)
+{
+	if (index >= 0 && index < 100) {
+		this->_ideas[index] = idea;
+	}
+	else
+	{
+		std::cout << "Invalid idea index!" << std::endl;
+	}
 }
