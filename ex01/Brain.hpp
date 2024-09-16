@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 18:56:04 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/11 18:59:12 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/16 11:38:11 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ class Brain
 		~Brain();
 
 		Brain& operator=(const Brain& other);
-	protected:
 		std::string _ideas[100];
 };
 

@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 15:19:02 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/12 12:05:57 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/16 13:07:39 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,12 @@
 
 int	main(void)
 {
-	const Animal j;
+	const Dog j;
+	//const Animal i;
 
+	const Animal* x = new Dog;
+	std::cout << x->getType() << " " << std::endl;
 	std::cout << j.getType() << " " << std::endl;
+	delete x;
 	return (0);
 }

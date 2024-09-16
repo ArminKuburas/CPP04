@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 03:55:05 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/16 03:57:47 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/16 13:34:26 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,5 +69,5 @@ AMateria* MateriaSource::createMateria(std::string const & type)
 		if (_materias[i] && _materias[i]->getType() == type)
 			return (_materias[i]->clone());
 	}
-	return (nullptr); //Is nullptr considered 0? If not, return 0
+	return (0); //Is nullptr considered 0? If not, return 0
 }
