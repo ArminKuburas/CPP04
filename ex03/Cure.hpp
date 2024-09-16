@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 03:45:16 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/16 03:47:16 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/16 04:36:13 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,15 @@
 
 class Cure : public AMateria
 {
-	Cure();
-	virtual ~Cure();
-	Cure(const Cure& source);
-	
-	Cure& operator=(const Cure& other);
+	public:
+		Cure();
+		virtual ~Cure();
+		Cure(const Cure& source);
+		
+		Cure& operator=(const Cure& other);
 
-	virtual AMateria* clone() const;
-	virtual void use(ICharacter& target);
+		virtual AMateria* clone() const;
+		virtual void use(ICharacter& target);
 };
 
 #endif
