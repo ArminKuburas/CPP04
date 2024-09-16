@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 15:18:56 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/11 15:34:21 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/16 09:08:47 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Cat : public Animal
 
 		Cat& operator=(const Cat& other);
 		
-		void makeSound(void) const;
+		void makeSound(void) const override;
 };
 
 #endif

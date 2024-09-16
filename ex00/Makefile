@@ -6,12 +6,12 @@
 #    By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/11 15:25:18 by akuburas          #+#    #+#              #
-#    Updated: 2024/09/11 15:32:47 by akuburas         ###   ########.fr        #
+#    Updated: 2024/09/16 09:08:51 by akuburas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 C++ = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -Wall -Wextra -Werror -std=c++11
 
 NAME = exercise00
 

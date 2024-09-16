@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 15:19:02 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/11 15:41:32 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/16 09:10:55 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,34 @@ int	main(void)
 		delete meta;
 		std::cout << "---------------------" << std::endl;
 	}
-	return (0);
+	{
+		std::cout << "---------------------" << std::endl;
+		std::cout << "Time to try out all constructors!" << std::endl;	
 
-	
+		Animal a;
+		Animal b(a);
+		Animal c;
+		c = a;
+		std::cout << "---------------------" << std::endl;
+		Cat d;
+		Cat e(d);
+		Cat f;
+		f = d;
+		std::cout << "---------------------" << std::endl;
+		Dog g;
+		Dog h(g);
+		Dog i;
+		i = g;
+		std::cout << "---------------------" << std::endl;
+		WrongAnimal j;
+		WrongAnimal k(j);
+		WrongAnimal l;
+		l = j;
+		std::cout << "---------------------" << std::endl;
+		WrongCat m;
+		WrongCat n(m);
+		WrongCat o;
+		o = m;
+	}
+	return (0);
 }
